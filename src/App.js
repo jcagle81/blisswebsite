@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { commerce } from './lib/commerce';
-import { Products, Navbar, Cart } from './components';
+import { Products, Navbar, Cart, Services, About, Shopping, TopSection, Footer } from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Aservices from './components/Aservices/Aservices';
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -31,7 +32,7 @@ const App = () => {
   }
 
   const handleRemoveFromCart = async (productId) => {
-    const { cart } = await commerce.cart.remove(products);
+    const { cart } = await commerce.cart.remove(productId);
 
     setCart(cart);
   }
@@ -56,7 +57,9 @@ const App = () => {
         <Navbar totalItems={cart.total_items} />
           <Switch>
             <Route exact path="/">
-              <Products products={products} onAddToCart={handleAddToCart} />
+              <TopSection />
+              <Services />
+              <Shopping />
             </Route>
 
             <Route exact path="/cart">
@@ -65,10 +68,17 @@ const App = () => {
             onRemoveFromCart={handleRemoveFromCart}
             onEmptyCart={handleEmptyCart} />
             </Route>
-
-            
-            
+            <Route exact path="/products">
+              <Products products={products} onAddToCart={handleAddToCart} />
+            </Route>
+            <Route exact path="/about">
+              <About />
+            </Route>
+            <Route exact path="/services">
+              <Aservices />
+            </Route>
           </Switch>
+        <Footer />
       </div>
     </Router>
   );
