@@ -4,7 +4,7 @@ import { AppBar, Toolbar, IconButton, Badge, Typography, Drawer, Button, List, D
 import { ShoppingCart } from '@material-ui/icons';
 import useStyles from './styles';
 import { Link } from 'react-router-dom';
-import logo from '../../images/logo.jpg'
+import logo from '../../images/logo.jpg';
 import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -156,7 +156,7 @@ const Navbar = ({ totalItems }) => {
         
           {['Services', 'Products'].map((text, index) => (
             <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <MailIcon /> : <DateRangeIcon />}</ListItemIcon>
+              <ListItemIcon>{index % 2 === 0 ? <SelfImprovementIcon /> : <DateRangeIcon />}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))}
