@@ -1,8 +1,6 @@
 import React from 'react'
-import { Card, CardMedia, CardContent, CardActions, Typography, } from '@material-ui/core';
+import { Card, CardMedia, CardContent, Typography, } from '@material-ui/core';
 import useStyles from './styles'
-// import Button from "../../Button/Button"
-
 
 const Aservice = ({ service }) => {
     const classes = useStyles ();
@@ -21,13 +19,7 @@ const Aservice = ({ service }) => {
                 </div>
                 <Typography variant="body2" className={classes.typography} color="textSecondary">{service.description}</Typography>
             </CardContent>
-            {/* <CardActions disableSpacing className={classes.cardActions}>
-            <a href="https://square.site/book/A525MVMSYAYVK/bliss-esthetics-colo-spgs-co"><Button>Book now</Button></a>
-            </CardActions> */}
-                
-            
-            
-        </Card>
+          </Card>
     )
 }
 

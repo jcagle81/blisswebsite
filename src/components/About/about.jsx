@@ -35,11 +35,15 @@ const TopSectionInnerContainer = styled.div`
     justify-content: space-evenly;
 `;
 
+
+
 const StandoutImage = styled.div`
+    display: flex;
+    justify-content: center;
     width: 30em;
     height: 30em;
     padding-top: 7em;
-    padding-left: 70em;
+  
     img{
         width: 100%;
         height: 100%;
@@ -80,10 +84,11 @@ const AboutText = styled.h2`
   align-items: center;
   margin: 0;
   padding-top: 1em;
+  
   line-height: 1.4;
   font-weight: 500;
   font-size: 50px;
-  height:7em;
+  max-height:20em;
   
     
   @media screen and (max-width: ${deviceSize.mobile}px) {
@@ -103,9 +108,7 @@ const About = (props) => {
             {children}
             <TopSectionInnerContainer>
               <LogoContainer>
-                
                 <Marginer direction="vertical" margin={8} />
-                
                 <Marginer direction="vertical" margin={15} />
                 </LogoContainer>
               {!isMobile && (
@@ -118,9 +121,11 @@ const About = (props) => {
             <SloganText>All About Tanya</SloganText>
           </BackgroundFilter>
         </TopSectionContainer>
-        <AboutText>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        </AboutText>
+        <textContainer>  
+          <AboutText>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </AboutText>
+        </textContainer>
       </div>
     );
   }

@@ -7,7 +7,7 @@ import { Marginer } from "../../marginer/marginer";
 import { deviceSize } from "../../responsive/responsive";
 
 import TopSectionBackgroundIMG from '../../../images/sensual.jpg';
-import Owner from '../../../images/owner.jpg';
+import Salon from '../../../images/salon.jpg';
 
 const TopSectionContainer = styled.div`
     width: 100%;
@@ -64,7 +64,7 @@ const SloganText = styled.h3`
   font-weight: 500;
   font-size: 35px;
   @media screen and (max-width: ${deviceSize.mobile}px) {
-    font-size: 24px;
+    font-size: 20px;
   }
 `;
 
@@ -84,13 +84,13 @@ const TopSection = (props) => {
                 textSize={isMobile ? 35 : 55}
               />
               <Marginer direction="vertical" margin={8} />
-              <SloganText>Bring your inner beauty out!</SloganText>
+              <SloganText>Show Your Inner Beauty To The World</SloganText>
               <Marginer direction="vertical" margin={15} />
               <a href="https://square.site/book/A525MVMSYAYVK/bliss-esthetics-colo-spgs-co"><Button>Book now</Button></a>
             </LogoContainer>
             {!isMobile && (
               <StandoutImage>
-                <img src={Owner} alt="Bliss Esthetics Owner" />
+                <img src={Salon} alt="Bliss Esthetics Owner" />
               </StandoutImage>
             )}
           </TopSectionInnerContainer>

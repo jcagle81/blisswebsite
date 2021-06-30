@@ -11,8 +11,10 @@ export default makeStyles((theme) => ({
     flexGrow: 1,
   },
   typography: {
+    
     flexGrow: 1,
         textAlign: "center"
+    
   },
   
 }));

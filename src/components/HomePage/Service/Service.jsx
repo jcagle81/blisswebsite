@@ -2,7 +2,6 @@ import React from 'react'
 import { Card, CardMedia, CardContent, CardActions, Typography, } from '@material-ui/core';
 import useStyles from './styles'
 
-
 const Service = ({ service }) => {
     const classes = useStyles();
 
@@ -21,9 +20,6 @@ const Service = ({ service }) => {
                 <Typography variant="h5" className={classes.typography} color="textSecondary">{service.description}</Typography>
             </CardContent>
             <CardActions disableSpacing className={classes.cardActions} />
-                
-            
-            
         </Card>
     )
 }
