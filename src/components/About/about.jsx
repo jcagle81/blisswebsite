@@ -84,10 +84,11 @@ const AboutText = styled.h2`
   align-items: center;
   margin: 0;
   padding-top: 1em;
-  
+  padding-left: 2em;
+  padding-right: 2em;
   line-height: 1.4;
   font-weight: 500;
-  font-size: 50px;
+  font-size: 40px;
   max-height:20em;
   
     

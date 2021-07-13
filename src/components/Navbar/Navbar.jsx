@@ -41,16 +41,16 @@ const Navbar = ({ totalItems }) => {
             })} color="inherit">
                <Toolbar>
                <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            className={clsx(classes.menuButton, open && classes.hide)}
-          >
-            <MenuIcon />
-          </IconButton>
+                    color="inherit"
+                    aria-label="open drawer"
+                    onClick={handleDrawerOpen}
+                    edge="start"
+                    className={clsx(classes.menuButton, open && classes.hide)}
+                    >
+                    <MenuIcon />
+                </IconButton>
                 
-                 <div className={classes.grow} />
+                    <div className={classes.grow} />
                     <div className={classes.button}>
                         <IconButton component={Link} to="/cart" aria-label="Show cart items" color="inherit">
                             <Badge badgeContent={totalItems} color="secondary">

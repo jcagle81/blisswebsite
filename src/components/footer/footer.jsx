@@ -28,6 +28,7 @@ const FooterContainer = styled.div`
 const Address = styled.div`
   display: flex;
   flex-direction: column;
+  padding-left: 1em;
   align-items: flex-start;
   font-size: 10px;
   color: #264653;
@@ -36,6 +37,7 @@ const Address = styled.div`
 const Phone = styled.h2`
   margin: 0;
   margin-bottom: 13px;
+  padding-left: 1em;
   font-size: 10px;
   color: #264653;
 `;
